@@ -1,0 +1,18 @@
+#include"maxheap.h"
+#include<iostream>
+
+int main()
+{
+  MaxHeap h1;
+  h1.add(11);
+  h1.add(75);
+  h1.add(52);
+  h1.add(23);
+  h1.add(10);
+  h1.add(7);
+  h1.add(1);
+  h1.Heapsort();
+  MaxHeap h2{h1};
+  std::cout<<h2;
+  return 0;
+}

@@ -1,0 +1,32 @@
+#ifndef MAXHEAP_H
+#define MAXHEAP_H
+
+class MaxHeap
+{
+ public:
+  MaxHeap();
+  MaxHeap(int* , int);
+  ~MaxHeap();
+  void add(int);
+  int Parent(int);
+  int RightChild(int);
+  int LeftChild(int);
+  int Left(int);
+  int Right(int);
+  void max_heapify(int);
+  void build_max_heap();
+  int operator[](int i);
+  /*  void Delete();
+  int Max();
+  int getHeight();
+  void printArray();
+  void operator+(int);
+  ostream operator<<();
+  void Heapsort(); */
+ private:
+  int* arr;
+  int size{};
+  int heapSize{};////meghdar max
+};
+
+#endif
